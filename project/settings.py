@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'honey',
+    'products',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
