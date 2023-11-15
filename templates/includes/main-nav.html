@@ -17,10 +17,10 @@
                 Raw Honey
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="raw-honey-link">
-                <a href="" class="dropdown-item">Manuka &amp; Kanuka</a>
-                <a href="" class="dropdown-item">Acacia</a>
-                <a href="" class="dropdown-item">Alfalfa</a>
-                <a href="" class="dropdown-item">All Raw Honey</a>
+                <a href="{% url 'products' %}?category=manuka,anuka" class="dropdown-item">Manuka &amp; Kanuka</a>
+                <a href="{% url 'products' %}?category=acacia" class="dropdown-item">Acacia</a>
+                <a href="{% url 'products' %}?category=alfalfa" class="dropdown-item">Alfalfa</a>
+                <a href="{% url 'products' %}?category=manuka,kanuka,acacia,alfalfa" class="dropdown-item">All Raw Honey</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Pure Honey
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="pure-honey-link">
-                <a href="" class="dropdown-item">Sage &amp; Ginger</a>
-                <a href="" class="dropdown-item">Lavender &amp; Avocado</a>
-                <a href="" class="dropdown-item">All Pure Honey</a>
+                <a href="{% url 'products' %}?category=sage,ginger" class="dropdown-item">Sage &amp; Ginger</a>
+                <a href="{% url 'products' %}?category=lavender,avocado" class="dropdown-item">Lavender &amp; Avocado</a>
+                <a href="{% url 'products' %}?category=sage,ginger,lavender,avocado" class="dropdown-item">All Pure Honey</a>
             </div>
         </li>
 
@@ -40,10 +40,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
